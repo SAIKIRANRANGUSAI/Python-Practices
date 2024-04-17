@@ -8,16 +8,19 @@
 
         -> use uppercase letter for Constrants(unique value Should not change) but in python we can change.
               -> conatrants should not overwrite
+        -> slicing(start,end,step)
+        -> len() starts with 1
 
       The .casefold() method returns a copy of a string with all characters in lowercase. It is similar to .lower(),
       but whereas that method deals purely with ASCII text, .casefold() can also convert Unicode characters.
 
   Methods used in string:
-  -> upper, lower
+  -> upper, lowerh
   ->patition- saparte in string (line 45)
   ->rstrip, split - split done in list format
-  ->replace, find
-  -> index, replace, find(if not found then return -1), isnumeric(check if it is numeric or not)
+  ->replace(replace by value)
+  -> index(raise error exception if not found), find(if not found then return -1),Both of them return the starting index of the substring in a string if it exists
+  isnumeric(check if it is numeric or not)
 
         python does't have char.
 """

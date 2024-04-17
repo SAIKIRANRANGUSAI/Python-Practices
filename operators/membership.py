@@ -3,7 +3,7 @@ membership(in , not in) ->it checks wether an item present in and container or n
         ->in is reverse to not in
     it chcek wether a substring is present in the string or not
 
-    Membership Operator with Dictionaries: only keys will work values will me false
+    Membership Operator with Dictionaries: only keys will work values will be false
 
 """
 a = "sai"

@@ -28,7 +28,7 @@ print(type(c))  # <class 'complex'>
 j = 100_88_736327_234
 print(j)
 """
-   Type consersion: converting the varuable type of a paticular datatype to another data type is type consersion
+   Type consersion: converting the variable type of a paticular datatype to another data type is type consersion
    
  """
 
