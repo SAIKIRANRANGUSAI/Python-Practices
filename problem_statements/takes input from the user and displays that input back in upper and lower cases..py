@@ -1,5 +1,0 @@
-sai = input("enter some things")
-low = sai.lower()
-uppe = sai.upper()
-print("your message",low)
-print("your message",uppe)
