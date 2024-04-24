@@ -10,3 +10,16 @@
                 squares_generator = (i * i for i in range(5))
         -> 
 """
+def sai(n:int):
+    for i in range(n**n):
+        yield i
+if __name__ == '__main__':
+
+    result = sai(6)
+    print(next(result))
+    print(next(result))
+    for i in result:
+        print(i)
+        if i == 13:
+            break
+    print(next(result))
