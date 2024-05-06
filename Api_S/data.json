@@ -1,0 +1,6 @@
+sai_json2 = {
+    "names":[{1:"sai",2:"kiran",3:"rangu"}],
+    "age":23,
+    "color":"white",
+    "man":True
+}

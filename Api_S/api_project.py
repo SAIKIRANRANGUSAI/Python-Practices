@@ -12,9 +12,9 @@ app.config["MYSQL_HOST"] = "127.0.0.1"
 
 mysql = MySQL(app)
 
-@app.route("/")
+
 def create_table():
-    if mysql.connection:
+    with app.app_context():
         sai = mysql.connection.cursor()
         sai.execute("CREATE TABLE IF NOT EXISTS new_project ("
                     "id INT AUTO_INCREMENT PRIMARY KEY,"
@@ -26,8 +26,7 @@ def create_table():
         mysql.connection.commit()
         sai.close()
         return redirect(url_for("insert_data"))
-    else:
-        return "There is a connection problem, sorry!"
+create_table()
 
 @app.route("/insert")
 def insert_data():

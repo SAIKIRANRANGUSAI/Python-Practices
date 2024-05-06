@@ -28,3 +28,5 @@ print(sai_json)
 # only dict will access if we wamt to access the json object then convert it to dict and then you can access values
 print(kiran["age"])
 #print(sai_json["age"]) typeError
+
+
