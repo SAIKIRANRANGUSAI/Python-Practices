@@ -23,3 +23,5 @@ if __name__ == '__main__':
         if i == 13:
             break
     print(next(result))
+    print(next(result))
+    print(next(result))

@@ -3,7 +3,7 @@
         numeric datatypes are of three types:
 
                 -> int(4)
-                -> float(4.0) limit 15 digits
+                -> float(4.0) limit 15 digits , It's a immutable
                 -> complex(2+3j) 2 is real part and 3j is a imaginary part
 
         to find the datatype use type()

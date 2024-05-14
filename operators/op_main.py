@@ -12,12 +12,12 @@
                         20+4
                         =24
 
-            -> logical (ANS, OR, NOT)
+            -> logical (AND, OR, NOT)
             -> Comparison(==, !=, <=, >=, <, >)
             -> Assignment(=, +=, -=, *=, /=, %=, **=, //=)
             -> Bitwise(&, |, ~ ,)
-            -> membership( is , not is) - memory
-            -> identity (in , not in)
+            -> membership( in , not in) - memory
+            -> identity (is , not is)
             Complex class in Python doesn't support the modulus operator (%) and floor division operator (//).
 
 

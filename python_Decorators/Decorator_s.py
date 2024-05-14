@@ -9,7 +9,9 @@
 def sai(func):
     def star(*a,**ka):
         print("*"*12)
+        print("%"*15)
         func(*a,*ka)
+        print("%"*16)
         print("*"*10)
     return star
 

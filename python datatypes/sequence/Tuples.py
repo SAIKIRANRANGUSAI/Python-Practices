@@ -58,7 +58,7 @@ print(a,b,c) # 1 2 3
 
 rsk = (1,2,3,4,5)
 x,*y,z = rsk
-print(y)  # [2, 3, 4] in this senario x will tke one value zz will take one value but *y will tahek remaining all values
+print(y)  # [2, 3, 4] in this senario x will tke one value z will take one value but *y will tahek remaining all values
 
 # convering dict to tuple and list to tuple
 ls = [1,2,3,4]
