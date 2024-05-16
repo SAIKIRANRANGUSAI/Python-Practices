@@ -8,12 +8,12 @@ base_url = "http://127.0.0.1:5000"
 
 def get_requests():
     url = base_url + "/"
-    headers = {"Content-Type":"application/json"}
-    response = requests.get(url,headers=headers)
+    headers = {"Content-Type": "application/json"}
+    response = requests.get(url, headers=headers)
     assert response.status_code == 200
     json_data = response.json()
 
-    print(json.dumps(json_data,indent=4))
+    print(json.dumps(json_data, indent=4))
 
 def post_request():
     url = base_url + "/"
@@ -50,7 +50,7 @@ def deleting_request():
         print("Response content:", response.content)
 
 
-post_request()
+#post_request()
 get_requests()
-putting_request()
-deleting_request()
+#putting_request()
+#deleting_request()
