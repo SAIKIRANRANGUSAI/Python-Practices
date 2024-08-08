@@ -1,6 +1,6 @@
 """
     Tuples is a collection of data items of different data types
-    which is ordered and unchangeable allows dublicate.
+    which is ordered and unchangeable(immutable) allows dublicate.
     -> for empty tuples just used () pantatis but for single item use , (44,)
     ->To access values in tuple, use the square brackets for slicing along with the index or
       indices to obtain value available at that index. For example
@@ -18,9 +18,9 @@
         now sai is a tuple by default
     -> we can convert list to tuple and dict and also string to tuple by using tuple()
             s = tuple(a)
-    -> tuple is mutable we can't update values if we update then we get typeError.
+    -> tuple is immutable we can't update values if we update then we get typeError.
     -> if you want to update tuple then convert into list and update and convert into tuple
-       but after converting into tuple the id will change that means new tuple is created existing tuple ramain same.
+       but after converting into tuple the id will change that means new tuple is created existing tuple remain same.
    -> unpacking - sai = (1,2,3)
                  x,y,z = sai # x = 1, y = 2, z = 3
     -> count is used to find the occurance sai.count("sai")

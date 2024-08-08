@@ -1,14 +1,14 @@
 """
     Dictionarys: are used to store data values as key:value pairs
         -> It is ordered and changeble only values and no dublicates keys allowed
-        -> each key and value is saprated by : like "name":"sai" and each pair is saparated by ,
+        -> each key and value is separated by : like "name":"sai" and each pair is separated by ,
         -> keys are unique but values may not.
         ->The values of a dictionary can be of any type,
            but the keys must be of an immutable data type such as strings, numbers, or tuples.
         -> Only a number, string or tuple can be used as key
-        -> if we repeat key more than one time but iyt will only take once pair
+        -> if we repeat key more than one time but it will only take once pair
         -> we can access the values by keys by slicing name with key sai["name"] or by get like sai.get("age")
-        -> we can add new pair if not exists if pair is there then we can change values
+        -> we can add new pair if not exists if pair is exists then we can change values
         -> we can update values by keys
         -> use del to delete entire dict if you specify any key then that key will delete
         -> use pop  to delete a pair by key like sai.pop("age") we should use key or else not possible
@@ -22,7 +22,7 @@
              dictionary keys but something like ['key'] is not allowed(list and sets are not allowed)
         -> convert sets to dict use dict.fromkeys(sai)
         -> we can create empty dict by two type sai={} and sai = dict()
-        -> To change the key in dict first take new key = old key then del or pop old key
+       4 -> To change the key in dict first take new key = old key then del or pop old key
                     sai["new_key"] = sai["old_key"]
                     sai.pop["old_key] or del sai["old_key"]
         -> use "update" for join another dict to execting dict but only gives unique values.

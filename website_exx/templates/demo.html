@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Adding Data</h2>
+    <!-- Display flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <!-- Form to submit data -->
+    <form action="/add/" method="post">  <!-- Corrected action attribute -->
+        <p>Name: <input type="text" name="name" required></p><br>
+        <p>Age: <input type="text" name="age" required></p><br>
+        <p>Phone Number: <input type="text" name="phone_number" required></p><br>
+        <input type="submit" value="Add Records">
+    </form>
+</body>
+</html>

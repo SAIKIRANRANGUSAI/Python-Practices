@@ -5,4 +5,6 @@ sai = {
 }
 
 sai["class"] = "btech"
+sai["namess"] = sai["name"]
+sai.pop("name")
 print(sai)

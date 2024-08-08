@@ -48,9 +48,10 @@ def deleting():
         print("DELETE request failed with status code:", response.status_code)
 
 
-deleting()
+"""deleting()
 
 posting()
 getting()
 putting()
-deleting()
+deleting()"""
+getting()

@@ -15,8 +15,8 @@
       but whereas that method deals purely with ASCII text, .casefold() can also convert Unicode characters.
 
   Methods used in string:
-  -> upper, lowerh
-  ->patition- saparte in string (line 45)
+  -> upper, lower
+  ->patition- saparte in string (line 60)
   ->rstrip, split - split done in list format
   ->replace(replace by value)
   -> index(raise error exception if not found), find(if not found then return -1),Both of them return the starting index of the substring in a string if it exists

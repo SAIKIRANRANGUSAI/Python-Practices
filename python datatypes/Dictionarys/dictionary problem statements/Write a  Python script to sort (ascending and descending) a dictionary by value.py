@@ -1,7 +1,7 @@
 sai = {
-    "name":"sai",
-    "age":23,
-    "colour":"white"
+    "name": "sai",
+    "age": 23,
+    "colour": "white"
 }
-k = sorted(sai.items(k))
+k = sorted(sai.items())
 print(k)

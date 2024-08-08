@@ -6,7 +6,7 @@
     -> we can chcek elements present in sets or not by using "in" :keyword
     ->set is not a sequence data type,
        its items cannot be accessed individually as they do not have a positional index (as in list or tuple).
-       if we want to access use loops
+       if we `want to access use loops
    -> we can add elements by using "add" keyword but we can only one at a time.
    -> we can add two sets by using "update" keyword we can also add any iterable.
    -> we can join two set by using"|" like c = a|b , | is ued as union operator
@@ -34,7 +34,7 @@ demoset = {1,2,3,4,5}
 demoset.add("hello")
 print(demoset)  # {1, 2, 3, 4, 5, 'hello'}
 
-# adding two set or set+ any iterable by "update"
+# adding two set or set + any iterable by "update"
 a1 = {1,2,3,"saikiranb"}
 a2 = (1,2,3,4,"kiram")
 a1.update(a2)
