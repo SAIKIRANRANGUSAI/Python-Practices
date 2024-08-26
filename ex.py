@@ -1,50 +1,25 @@
-import requests,json
+import time
 
-base_url = "http://127.0.0.1:5000"
+import paramiko
+from getpass import getpass
 
-def getting_data():
-    url = base_url+"/"
-    response = requests.get(url)
-    assert response.status_code == 200
-    json_data = response.json()
-    print(json.dumps(json_data,indent=2))
+host = "192.168.147.128"
+username = input("enter username: ")
+#password = getpass("enter your password: ")
 
+sai = paramiko.SSHClient()
 
-def getting_data_by_id(id):
-    url = base_url+"/"+str(id)
-    response = requests.get(url)
-    assert response.status_code == 200
-    json_data = response.json()
-    print(json.dumps(json_data,indent=2))
-
-def posting_data_creating():
-    url = base_url+"/p"
-    data = {
-        "name": "sairangu", "age": 45
-    }
-    response = requests.post(url,json=data)
-    assert response.status_code == 201
-    json_data = response.json()
-    print(json.dumps(json_data,indent=2))
-
-def putting(id):
-    url = base_url+"/put/"+str(id)
-    ss = {
-        "name":"saikiranranguuuuuu",
-        "age":76
-    }
-    response = requests.put(url,json=ss)
-    response.raise_for_status()
-    assert response.status_code == 200
-    json_data = response.json()
-    print(json.dumps(json_data,indent=2))
+sai.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 
-def deleting(id):
-    url = base_url+"/d/"+str(id)
-    response = requests.delete(url)
-    assert response.status_code==200
-    json_data = response.json()
-    print(json.dumps(json_data,indent=3))
+sai.connect(hostname=host,username=username)
 
-deleting(2)
+commands = ["whoami","pwd","ls"]
+
+for i in commands:
+    stdin,stdout,stderr = sai.exec_command(i)
+    print(stdout.read().decode())
+    time.sleep(3)
+
+
+sai.close()
