@@ -10,5 +10,6 @@
      -> mapping: dict
      -> sets: set, frozen
      -> boolean: True, False
+     -> None :None
      -> binary: bytes, bytearray, memoryview
 """

@@ -6,7 +6,7 @@ for i in range(10):
         break
 print("done")
 
-#with ehile loop
+#with while loop
 a = 0
 while a<10:
 

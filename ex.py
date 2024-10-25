@@ -1,25 +1,24 @@
-import time
+import random
 
-import paramiko
-from getpass import getpass
+# Define subjects and available time slots (e.g., 5 days, 5 periods per day)
+subjects = ['Maths', 'Physics', 'Chemistry', 'Computer Science', 'English', 'Biology', 'History', 'PE']
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+periods_per_day = 5  # Number of periods per day
 
-host = "192.168.147.128"
-username = input("enter username: ")
-#password = getpass("enter your password: ")
+# Function to generate a timetable
+def generate_timetable(subjects, days, periods_per_day):
+    timetable = {}
+    for day in days:
+        timetable[day] = random.sample(subjects, periods_per_day)
+    return timetable
 
-sai = paramiko.SSHClient()
+# Function to display the timetable
+def display_timetable(timetable):
+    for day, periods in timetable.items():
+        print(f"\n{day} Timetable:")
+        for i, subject in enumerate(periods, 1):
+            print(f"  Period {i}: {subject}")
 
-sai.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
-
-sai.connect(hostname=host,username=username)
-
-commands = ["whoami","pwd","ls"]
-
-for i in commands:
-    stdin,stdout,stderr = sai.exec_command(i)
-    print(stdout.read().decode())
-    time.sleep(3)
-
-
-sai.close()
+# Generate and display the timetable
+timetable = generate_timetable(subjects, days, periods_per_day)
+display_timetable(timetable)

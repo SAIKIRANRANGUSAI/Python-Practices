@@ -4,7 +4,7 @@
             but we don't want to store all of them in memory at once.
         -> The "yield" keyword is used to produce a value from the generator
             and pause the generator function's execution until the next value is requested
-        -> we can also print al values with using for loop or using next(sai)
+        -> we can also print all values with using for loop or using next(sai)
         ->  Generator Expression: same as list comparison but insted of creating new list it will create
           generator object that can be iterated over to produce the values in the generator.
                 squares_generator = (i * i for i in range(5))
@@ -22,6 +22,7 @@ if __name__ == '__main__':
         print(i)
         if i == 13:
             break
+    print(next(result))
     print(next(result))
     print(next(result))
     print(next(result))

@@ -1,4 +1,5 @@
-# Continue: when condition met then current ietartion will skip the present iteration and move to next iteration.
+# Continue: when condition met then current ietartion will skip the present iteration
+# and move to next iteration.
 
 for i in range(5):
     if i ==3:

@@ -3,7 +3,7 @@
     -> Abstraion is actually finding which functionality is hidden from the user
        and which is shown to user (allowing them to focus on the essential features rather than the internal)
     -> It works in design phase
-    -> abstracion methods are usefull blueprints that ensure that we don't foget to implement methods
+    -> abstracion methods are usefull blueprints that ensure that we don't forget to implement methods
         from a class and they are usefull because they really help us to stay comsistence.
     -> we should import abc and abstractmethos and in class inherate abc
     -> In function use decorator like @abstractmethod
