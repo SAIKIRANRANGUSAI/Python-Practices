@@ -1,6 +1,6 @@
 """
  Global: The varibale that create outside the function is known as global varibale
-        -> global variable can you both in and outside the function.
+        -> global variable can use both in and outside the function.
         -> if there is no local varibale in function so we can use global in function
 """
 x = 5
